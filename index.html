@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Responsivo</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="container">
+        <header>Fomulário</header>
+        <form action="#" class="form">
+            <div class="input-box">
+                <label>Nome completo</label>
+                <input type="text" placeholder="Insira seu nome completo">
+            </div>
+
+            <div class="input-box">
+                <label>E-mail</label>
+                <input type="text" placeholder="Insira seu e-mail">
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <label>Telefone</label>
+                    <input type="number" placeholder="Insira seu número">
+                </div>
+
+                <div class="input-box">
+                    <label>Data de Nascimento</label>
+                    <input type="date" placeholder="Insira sua data de nascimento">
+                </div>
+            </div>
+
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" checked>
+                        <label for="check-male">Masculino</label>
+                    </div>
+
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender" checked>
+                        <label for="check-female">Feminino</label>
+                    </div>
+
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="gender" checked>
+                        <label for="check-other">Prefiro não dizer</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-box addres">
+                <label>Endereço</label>
+                <input type="text" placeholder="Insira sua rua" required>
+                <input type="text" placeholder="Insira sua rua linha 2" required>
+                <div class="column">
+                    <div class="select-box">
+                        <select>
+                            <option hidden>País</option>
+                            <option>Argentina</option>
+                            <option>Brasil</option>
+                            <option>Espanha</option>
+                            <option>EUA</option>
+                            <option>Japão</option>
+                        </select>
+                    </div>
+                    <input type="text" placeholder="Insira sua cidade" required>
+                </div>
+
+                <div class="column">
+                    <input type="text" placeholder="Insira sua região" required>
+                    <input type="number" placeholder="Insira seu código postal" required>
+                </div>
+            </div>
+
+            <button>Enviar</button>
+        </form>
+    </section>
+</body>
+
+</html>
